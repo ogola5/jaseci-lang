@@ -7,7 +7,12 @@ def subtract(a: float, b: float) -> float {
 def multiply (a: float, b: float) -> float{
     return  a * b;
 }
-def divide(a: float, b: float) -> float {
+def divide(a: float, b: float) -> float  |str{
+    #we check if b is zero before divinding
+    if b==0.0{
+        return "Error: Cannot divide by zero!";
+    }
+    # if b is non
     return  a / b;
 }
 with entry {
